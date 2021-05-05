@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style >
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+        *{
+            margin: 0;
+        }
+nav{
+    display: flex;
+    position: fixed;
+    width:100%;
+    z-index: 999;
+    align-items: center;
+    padding: 25px;
+    background: rgb(255, 255, 255);
+    justify-content: space-between;
+}
+.menu{
+    width:30px;
+}
+.menu-1{
+    width: 15px;
+    height: 2px;
+    background: #000;
+}
+.menu-2{
+    width: 30px;
+    height: 2px;
+    margin: 9px 0;
+    background: #000;
+}
+.menu-3{
+    width: 15px;
+    height: 2px;
+    margin-left: 15px;
+    background: #000;
+}
+#check{
+    display: inline-block;
+
+}
+.logo
+{
+    font:normal bold 25px poppins-semibold,poppins,sans-serif;
+            flex-wrap: nowrap;
+
+}
+.slash{
+    font-size: 25px;
+}
+.who{
+    font:normal 14px avenir-lt-w01_85-heavy1475544,sans-serif;
+}
+ nav p{
+     text-transform: uppercase;
+ }
+.nav-ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 30px;
+
+    list-style-type: none;
+
+}
+.nav-ul li a{
+ display: inline-block;
+ text-decoration: none;
+ padding: 10px 20px;
+
+}
+.nav-ul li a:last-child{
+    padding-right: 20px;
+}
+.nav-ul li a::after{
+    width: 60%;
+    height: 1px;
+    color: green;
+}
+#check{
+    display: none;
+}
+.menu{
+        display: none;
+
+}
+.hero{
+    background: hotpink;
+    width: 95%;
+    height:100vh;
+    display: flex;
+    z-index: 1;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+[class*="col-1"]
+{
+    width: 100%;
+    float: right;
+}
+@media(max-width:850px)
+{
+    nav{
+        width: 100%;
+        display: inline-flex;
+    }
+    .menu{
+        margin-right: 50px;
+        display: block;
+
+    }
+   .nav-ul{
+       width: 100%;
+       display: none;
+       flex-direction: column;
+
+   }
+        #check:checked ~ ul{   
+        flex-direction: column;
+        width:100%;        
+         display: flex;
+
+
+     }
+}
+@media(min-width:500px)
+{
+     .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}
+
+
+.hero {
+
+}
+
+    </style>
+    <script>
+        function myFunction() {
+        varx= document.getElementById("check").checked;
+        if(x== true){
+            document.getElementById("logo").style.display: "none";
+
+        }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+
+   <p>
+    <span class="logo" id="logo">Jon&nbsp;Waithira</span> 
+    <span class="slash"> /</span>&nbsp;<span class="who">software&nbsp;engineer</span></p>      
+ 
+                        <span> <input type="checkbox" name="check" id="check">
+                            <label for="check" onclick="myFunction()" class="menu">
+                                <div class="menu-1"></div>
+                                <div class="menu-2"></div>
+                                <div class="menu-3"></div>
+                            </label></span>
+
+    <ul class="nav-ul" id="nav-ul"> 
+            <li><a href="" class="ctive">About me</a></li>
+            <li><a href="">Resume</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+
+        </ul>
+
+    </nav>
+    <div class="hero">
+        <div class="col-6">
+            <div class="inner-box">
+
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="inner-box">
+
+            </div>
+    </div>
+    <p id="demo"></p>
+</body>
+</html>
