@@ -37,6 +37,24 @@ transition: width .3s;
 nav .mainMenu li a:hover::after{
 width: 100%;
 }
+
+
+.menu-1{width:15px;
+height:3px;
+background: #000;
+}
+.menu-2{
+width:30px;
+height:3px;
+margin: 10px 0;
+background: #000;
+}
+.menu-3{
+width:15px;
+float: right;
+height:3px;
+background: #000;
+}
 .openMenu{
     font-size: 2rem;
     display: none;
@@ -83,7 +101,7 @@ font:  normal bold 25px/1.4em poppins-semibold,poppins,sans-serif;;
 
 }
 .main{
-    background: rgb(255, 255, 255);
+    background:rgb(244,236,230);
     display: flex;
     flex-wrap: wrap;
     padding: 20px ;
@@ -123,7 +141,11 @@ img{
     margin-bottom: 20px;
 
 }
+.description
+{
+    font:normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
 
+}
 .desc p{
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -173,6 +195,11 @@ color: rgb(129, 138, 9);
 #btn{
     padding: 15px ;
     width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding:20px;
+
 }
 #btn .button{
     padding: 10px 20px;
@@ -204,10 +231,20 @@ a.button {
     background: #fff;
     color:rgb(0, 27, 85) ;
 }
+.description
+{
+    text-align: center;
+}
+.description2{
+    margin-top: 20px;
+}
 @media(max-width:500px){
 [class*="col-"]
 {
    width: 100%;
+}
+.main{
+    background: rgb(255, 255, 255);
 }
 .hero{
     background: rgb(255, 255, 255);
@@ -226,6 +263,7 @@ a.button {
 .inner-box{
     background:rgb(255, 255, 255);
     width:90%;
+    float: none;
     margin: 0 auto;
 }
 .img{
@@ -239,8 +277,33 @@ img{
      border-radius:50%;
     width: 100%; 
 }
+.boxme{
+text-align: center;
+
+}
+.boxme .inner{
+background: rgb(160, 144, 144);
+
+}
+.footer-bottom {
+margin-top: 30px;
+width: 100%;
+}
+.boxme .inner h1{
+ font:normal bold 39px poppins-semibold,poppins,sans-serif;
+
+}
+.description
+{
+    margin-top: 30px;
+    font:normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+    padding: 20px;
+
+}
 .footer{
         flex-flow: column wrap ;
+            background:rgb(244,236,230);
+
 
 }
 .footer-right{
@@ -321,6 +384,7 @@ footer{
     flex-flow: row wrap ;
     width: 100%;
     justify-content:space-between;
+    margin-top: 20px;
     padding: 10px;
     background: rgb(255, 255, 255);
 }
@@ -355,4 +419,31 @@ footer p{
 {
     padding: 0 50px 0 0;
     font-size: 30px;
+}
+.footer-bottom{
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+}
+.footer-bottom p
+{
+
+    color: rgb(61, 49, 49);
+    font:normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+}
+.footer-bottom a
+{
+        text-decoration: none;
+        color:  rgb(7, 100, 69) ;
+
+}
+.by
+{
+    text-align: center;
+    
+    
+}
+.inc{
+    float: right;
+    color: aquamarine;
 }
