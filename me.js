@@ -14,7 +14,6 @@ function show() {
 
 function hide() {
     mainMenu.style.top = '-100%';
-    mainMenu.style.z-index = '1';
     
 }
 var d= new Date()
