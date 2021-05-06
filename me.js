@@ -13,7 +13,7 @@ function show() {
 }
 
 function hide() {
-    mainMenu.style.top = '-150%';
+    mainMenu.style.top = '-300vh';
 }
 var d= new Date()
 document.getElementById("year").innerHTML = d.getFullYear();
