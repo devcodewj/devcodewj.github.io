@@ -13,7 +13,9 @@ function show() {
 }
 
 function hide() {
-    mainMenu.style.top = '-150%';
+    mainMenu.style.top = '-100%';
+    mainMenu.style.z-index = '1';
+    
 }
 var d= new Date()
 document.getElementById("year").innerHTML = d.getFullYear();
