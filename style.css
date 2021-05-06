@@ -342,7 +342,7 @@ margin-top: 20px;
     nav .mainMenu{
         height: 100vh;
         top: 0;
-        right: 0;
+        right: -100%;
         left: 0;
         z-index: 10;
         position: fixed;
