@@ -340,9 +340,9 @@ margin-top: 20px;
 @media(max-width:885px)
 {
     nav .mainMenu{
-        height: 100vh;
+        height: 80vh;
         top: 0;
-        right: -100%;
+        right: 0;
         left: 0;
         z-index: 10;
         position: fixed;
@@ -439,7 +439,6 @@ footer p{
 .by
 {
     text-align: center;
-    
     
 }
 .inc{
