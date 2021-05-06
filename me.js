@@ -7,13 +7,13 @@ closeMenu.addEventListener('click', hide);
 
 function show() {
     mainMenu.style.display = 'flex';
-    mainMenu.style.top = '0';
-    mainMenu.style.transition ='top 1s ease' ;
+    mainMenu.style.right = '0';
+    mainMenu.style.transition ='right 1s ease' ;
 
 }
 
 function hide() {
-    mainMenu.style.top = '-300vh';
+    mainMenu.style.right = '-100%';
 }
 var d= new Date()
 document.getElementById("year").innerHTML = d.getFullYear();
