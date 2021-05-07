@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
 }
+
 nav{
     display: flex;
     padding: 20px 0;
@@ -302,7 +303,8 @@ width: 100%;
 }
 .footer{
         flex-flow: column wrap ;
-            background:rgb(244,236,230);
+        flex-direction: column-reverse;
+        background:rgb(244,236,230);
 
 
 }
@@ -424,6 +426,9 @@ footer p{
     display: inline-block;
     width: 90%;
     margin: 0 auto;
+}
+.footer-1{
+    margin-left: 30px;
 }
 .footer-bottom p
 {
